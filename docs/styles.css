@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+/* Universal */
+
+:root {
+    --primary-color: #F1F6F9;
+    --secondary-color: #394867;
+    --third-color: #212A3E;
+    --fourth-color: #9BA4B5;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* General */
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+br {
+    content: "";
+    margin: 2em;
+    display: block;
+    font-size: 7%;
+}
+
+/* Classes */
+
+/* Navbar */
+
+.navbar {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    height: 70px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    color: var(--primary-color);
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    border-bottom: 1.5px var(--primary-color) solid;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+/* Bio */
+
+.bio {
+    height: 400px;
+    background-color: var(--secondary-color);
+    color: var(--fourth-color);
+    position: relative;
+}
+
+.bio-text h1, .btn {
+    color: var(--primary-color);
+}
+
+.bio p {
+    margin: 20px 0;
+}
+
+.photo {
+    height: 220px;
+    width: 190px;
+    border-radius: 50%;
+    padding-top: 7px;
+}
+
+.bio::before,
+.bio::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background: var(--third-color);
+    transform: skewY(-3deg);
+}
+
+/* Education */
+
+.degree {
+    background-color: var(--third-color);
+    text-align: right;
+    height: 390px;
+}
+
+.degree h2, .degree p {
+    color: var(--primary-color);
+}
+
+.degree h3 {
+    color: var(--fourth-color);
+    padding: 17px 4px 4px 4px;
+}
+
+.school p {
+    padding: 1px 10px 1px 10px;
+    color: var(--fourth-color);
+}
+
+.school h2 {
+    padding: 14px 3px 1px 10px;
+}
+
+.school img {
+    height: 170px;
+    width: 190px;
+    mix-blend-mode: lighten;
+    margin-top: 21px;
+}
+
+.degree_icon img {
+    height: 130px;
+    width: 100px;
+    mix-blend-mode: lighten;
+}
+/* Certs */
+
+.cert:hover {
+    transform: scale(1.09);
+}
+
+.certs {
+    background-color: var(--primary-color);
+}
+
+.cert-align {
+    height: 99%;
+    width: 99%;
+    margin-bottom: 30px;
+}
+
+.certs-heading {
+    padding: 7px;
+    font-size: x-large;
+}
+
+/* About Me */
+
+.aboutme-head {
+    background-color: var(--third-color);
+    color: var(--primary-color);
+    padding: 30px 7px 30px 7px;
+}
+
+.aboutme {
+    background-color: var(--third-color);
+    color: var(--primary-color);
+    padding-bottom: 20px;
+}
+
+.aboutme h3 {
+    color: var(--primary-color);
+}
+
+/* Projects */
+
+.projects-head, .exp-head {
+    height: 470px;
+    background-color: var(--secondary-color);
+}
+
+.projects-head h1, .exp-head h1 {
+    color: var(--primary-color);
+}
+.projects-head p, .exp-head p {
+    color: var(--fourth-color);
+}
+
+.projects-head img, .exp-head img {
+    width: 200px;
+    justify-self: flex-end;
+    mix-blend-mode: lighten;
+}
+
+.soft-proj-head {
+    background-color: var(--primary-color);
+    color: var(--third-color);
+    padding: 11px 7px 11px 7px;
+}
+
+.soft-proj {
+    background-color: var(--primary-color);
+    padding-bottom: 30px;
+}
+
+.soft-proj h3, .cyber-proj h3, .school-proj h3 {
+    display: inline-block;
+}
+
+.soft-proj p, .cyber-proj p, .school-proj p {
+    margin: 4px 70px;
+}
+
+.soft-proj a:hover, .cyber-proj a:hover {
+    border-bottom: 1.5px var(--third-color) solid;
+}
+
+.cyber-proj {
+    background-color: var(--primary-color);
+    padding-bottom: 30px;
+}
+
+.cyber-proj-head {
+    background-color: var(--primary-color);
+    color: var(--third-color);
+    padding: 11px 7px 11px 7px;
+}
+
+.school-proj {
+    background-color: var(--secondary-color);
+    color: var(--fourth-color);
+    padding-bottom: 30px;
+}
+
+.school-proj-head {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 11px 7px 11px 7px;
+}
+
+.school-proj a {
+    color: var(--primary-color);
+}
+
+.school-proj a:hover {
+    border-bottom: 1.5px var(--primary-color) solid;
+}
+    
+/* Footer */
+
+.foot{
+    background-color: var(--third-color);
+    padding-top: 7px;
+    padding-bottom: 11px;   
+}   
+
+.foot-div {
+    margin: 0.5% 19%;
+}
+
+.contact {
+    background-color: var(--third-color);
+    color: var(--primary-color);
+    box-shadow: 0 0 7px var(--primary-color);
+    border-radius: 9px;
+    margin-top: 21px;
+}
+
+.contact-align {
+    color: var(--primary-color);
+    font-size: medium;
+    font-style: oblique;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.foot a {
+    color: var(--primary-color);
+}
+
+.foot a:hover {
+    border-bottom: 1.5px var(--primary-color) solid;
+}
+
+/* Experience */
+
+.swe {
+    background-color: var(--third-color);
+    color: var(--primary-color);
+    padding-bottom: 30px;
+}
+
+.swe p {
+    color: var(--fourth-color);
+}
+.ce-img {
+    width: 300px;
+    padding: 50px 0px 50px 50px;
+}
+
+.ce-head {
+    background-color: var(--third-color);
+    color: var(--primary-color);
+    padding: 11px 7px 11px 7px;
+}
+
+.cyb {
+    background-color: var(--primary-color);
+    padding-bottom: 30px;
+}
+.cyb-head {
+    background-color: var(--primary-color);
+    color: var(--primary-color);
+    padding: 11px 7px 11px 7px;
+}
