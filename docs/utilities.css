@@ -198,18 +198,208 @@ grid-template-columns: 60% 40%;
     }
 }
 
-/* Mobile */
+/* Media Queries */
 
-@media (max-width: 500px) {
-    .navbar {
-        height: 110px;
+/* Tablet */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 0 20px;
     }
 
-    .navbar .flex {
-        flex-direction: column;
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-3 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-4 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cont-head-l,
+    .cont-head-d,
+    .cont-head-ce {
+        width: 100%;
+    }
+
+    .head-al {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .navbar {
+        height: auto;
+        padding: 10px;
     }
 
     .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        padding: 10px 0;
+        margin: 5px 0;
+    }
+
+    .bio {
+        height: auto;
+    }
+
+    .bio .bio-text h1 {
+        font-size: 1.5em;
+    }
+
+    .photo {
+        height: 180px;
+        width: 150px;
+    }
+
+    .degree {
+        height: auto;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .degree h2, .degree p {
+        font-size: 1em;
+    }
+
+    .degree_icon img {
+        height: 100px;
+        width: 80px;
+    }
+
+    .projects-head, .exp-head {
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .projects-head img, .exp-head img {
+        width: 150px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 100%;
+        border-radius: 10%;
+    }
+
+    .proj-card {
+        border-radius: 10%;
+    }
+
+    .cont-head-l,
+    .cont-head-d,
+    .cont-head-ce {
+        width: 100%;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .navbar {
+        height: auto;
         padding: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        padding: 8px 0;
+        margin: 5px 0;
+    }
+
+    .btn {
+        padding: 8px 20px;
+    }
+
+    .arrow {
+        width: 25px;
+        height: 12px;
+        margin: 20px 5px 0px 5px;
+    }
+
+    .description {
+        margin-bottom: 20px;
+    }
+
+    .bio {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .bio .bio-text h1 {
+        font-size: 1.2em;
+    }
+
+    .photo {
+        height: 150px;
+        width: 130px;
+    }
+
+    .degree {
+        height: auto;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .degree h2, .degree p {
+        font-size: 0.9em;
+    }
+
+    .degree_icon img {
+        height: 80px;
+        width: 60px;
+    }
+
+    .projects-head, .exp-head {
+        height: auto;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .projects-head img, .exp-head img {
+        width: 120px;
+    }
+
+    .head-al {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .foot-div {
+        margin: 0.5% 10%;
+    }
+
+    .contact-align {
+        font-size: small;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
