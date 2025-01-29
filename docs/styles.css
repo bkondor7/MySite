@@ -197,7 +197,7 @@ br {
 /* Projects */
 
 .projects-head, .exp-head {
-    height: 470px;
+    height: 240px;
     background-color: var(--secondary-color);
 }
 
